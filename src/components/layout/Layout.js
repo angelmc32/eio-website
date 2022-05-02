@@ -1,14 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 
 // import Header from "./header-original"
-import Header from './Header';
-import '../../styles/styles.css';
+import Header from "./Header";
+import "../../styles/styles.css";
+import "@fontsource/questrial";
+import "@fontsource/nunito-sans";
 
-import UIkit from 'uikit';
+import UIkit from "uikit";
 // import icons from 'uikit/dist/js/uikit-icons';
-import 'uikit/dist/css/uikit.min.css';
+import "uikit/dist/css/uikit.min.css";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
