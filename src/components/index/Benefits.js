@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
+import React from 'react';
+import styled from 'styled-components';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Benefits = () => {
   return (
     <BenefitsContainer className="uk-section">
       <h2>
-        Más que un servicio de enfermería:{" "}
-        <span className="uk-text-pink uk-text-bold">calidad y confianza</span>{" "}
-        para tu <span className="uk-text-pink uk-text-bold">bienestar</span>{" "}
+        Más que un servicio de enfermería:{' '}
+        <span className="uk-text-pink uk-text-bold">calidad y confianza</span>{' '}
+        para tu <span className="uk-text-pink uk-text-bold">bienestar</span>{' '}
       </h2>
       <div className="grid-container">
         <div className="uk-padding-small card-1">
@@ -80,7 +80,7 @@ const Benefits = () => {
   );
 };
 
-const BenefitsContainer = styled.div`
+const BenefitsContainer = styled.section`
   min-height: calc(100vh - 64px);
   display: flex !important;
   flex-direction: column;
@@ -88,9 +88,13 @@ const BenefitsContainer = styled.div`
   background: #060f74;
   color: #ffffff;
   text-align: center;
-  padding: 0 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   h2 {
     color: #ffffff !important;
+  }
+  .uk-text-pink {
+    color: #ff85bc !important;
   }
   .grid-container > * {
     margin-bottom: 20px;
@@ -125,7 +129,6 @@ const BenefitsContainer = styled.div`
   }
 
   @media only screen and (min-width: 1366px) {
-    min-height: 92vh;
     .grid-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -148,7 +151,6 @@ const BenefitsContainer = styled.div`
   }
 
   @media only screen and (min-width: 1440px) {
-    min-height: 92vh !important;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -173,7 +175,6 @@ const BenefitsCard = styled.div`
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   border: 1px solid rgba(209, 213, 219, 0.3);
-
   p {
     text-align: justify;
   }

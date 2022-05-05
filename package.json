@@ -17,7 +17,9 @@
   "dependencies": {
     "@fontsource/nunito-sans": "^4.5.6",
     "@fontsource/questrial": "^4.5.8",
+    "assert": "^2.0.0",
     "babel-plugin-styled-components": "^2.0.7",
+    "fs": "^0.0.1-security",
     "gatsby": "^4.13.0",
     "gatsby-plugin-image": "^2.13.0",
     "gatsby-plugin-manifest": "^4.13.0",
@@ -25,6 +27,7 @@
     "gatsby-plugin-styled-components": "^5.13.0",
     "gatsby-source-filesystem": "^4.13.0",
     "gatsby-transformer-sharp": "^4.13.0",
+    "path-browserify": "^1.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.3.5",

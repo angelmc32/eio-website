@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
+import React from 'react';
+import styled from 'styled-components';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Hero = () => {
   return (
     <HeroContainer className="uk-section">
       <div className="stmt-container">
         <h1>
-          Recibe el mejor{" "}
+          Recibe el mejor{' '}
           <span className="uk-text-pink uk-text-bold">cuidado</span>
-          <br className="uk-visible@s" /> en la comodidad de tu{" "}
+          <br className="uk-visible@s" /> en la comodidad de tu{' '}
           <span className="uk-text-pink uk-text-bold">hogar</span>
         </h1>
       </div>
@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
       <div className="cta-container">
         <h3>¿Necesitas un servicio a domicilio?</h3>
-        <button className="uk-button uk-button-primary">Cotiza ahora</button>
+        <button className="uk-button uk-button-primary">¡Agenda ahora!</button>
       </div>
     </HeroContainer>
   );
@@ -102,6 +102,10 @@ const HeroContainer = styled.section`
   @media only screen and (min-width: 1024px) {
     padding-left: 75px;
     padding-right: 75px;
+
+    .cta-container {
+      padding-top: 10%;
+    }
   }
 `;
 
