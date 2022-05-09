@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
       <div className="cta-container">
         <h3>¿Necesitas un servicio a domicilio?</h3>
-        <button className="uk-button uk-button-primary">Cotiza ahora</button>
+        <button className="uk-button uk-button-primary">¡Agenda ahora!</button>
       </div>
     </HeroContainer>
   );

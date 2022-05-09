@@ -80,7 +80,7 @@ const Benefits = () => {
   );
 };
 
-const BenefitsContainer = styled.div`
+const BenefitsContainer = styled.section`
   min-height: calc(100vh - 64px);
   display: flex !important;
   flex-direction: column;
@@ -88,9 +88,13 @@ const BenefitsContainer = styled.div`
   background: #060f74;
   color: #ffffff;
   text-align: center;
-  padding: 0 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   h2 {
     color: #ffffff !important;
+  }
+  .uk-text-pink {
+    color: #ff85bc !important;
   }
   .grid-container > * {
     margin-bottom: 20px;
@@ -148,7 +152,6 @@ const BenefitsContainer = styled.div`
   }
 
   @media only screen and (min-width: 1440px) {
-    min-height: 92vh !important;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -177,7 +180,7 @@ const BenefitsCard = styled.div`
   p {
     text-align: justify;
   }
-  @media only screen and (min-width: 768px) and (max-width: 1364px) {
+  @media only screen and (min-width: 768px) and (max-width: 1365px) {
     div.uk-margin-bottom {
       display: flex;
       justify-content: center;
