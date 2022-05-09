@@ -24,7 +24,7 @@ const SocialProof = () => {
           </ul>
 
           <a
-            className="uk-position-center-left-out uk-position-small uk-hidden-hover"
+            className="uk-position-center-left-out uk-position-small"
             href="/#"
             role="button"
             aria-label="Previous comment"
@@ -34,7 +34,7 @@ const SocialProof = () => {
             {" "}
           </a>
           <a
-            className="uk-position-center-right-out uk-position-small uk-hidden-hover"
+            className="uk-position-center-right-out uk-position-small"
             href="/#"
             role="button"
             aria-label="Next comment"
@@ -58,6 +58,22 @@ const SocialProofContainer = styled.div`
   }
   @media only screen and (min-width: 768px) {
     padding: 5% 7.5% 2.5% 7.5% !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div.uk-position-relative.uk-visible-toggle.uk-dark {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media only screen and (min-width: 1366px) {
+    div.uk-position-relative.uk-visible-toggle.uk-dark {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+    }
   }
 `;
 

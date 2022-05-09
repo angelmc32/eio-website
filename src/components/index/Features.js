@@ -63,7 +63,7 @@ const FeaturesCard = styled.div`
   padding: 30px 20px 20px 20px;
   backdrop-filter: blur(10px) saturate(174%);
   -webkit-backdrop-filter: blur(10px) saturate(174%);
-  background-color: rgba(248, 248, 248, 0.9);
+  background-color: rgba(248, 248, 248, 0.95);
   border-radius: 5px;
   border: 1px solid rgba(209, 213, 219, 0.3);
   h4 {
