@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
+import React from 'react';
+import styled from 'styled-components';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Hero = () => {
   return (
     <HeroContainer className="uk-section">
       <div className="stmt-container">
         <h1>
-          Recibe el mejor{" "}
+          Recibe el mejor{' '}
           <span className="uk-text-pink uk-text-bold">cuidado</span>
-          <br className="uk-visible@s" /> en la comodidad de tu{" "}
+          <br className="uk-visible@s" /> en la comodidad de tu{' '}
           <span className="uk-text-pink uk-text-bold">hogar</span>
         </h1>
       </div>

@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Features = () => {
   return (
     <FeaturesContainer className="uk-section">
       <div className="features-container">
         <h2>
-          Un cuidado{" "}
+          Un cuidado{' '}
           <span className="uk-text-pink uk-text-bolder">integral</span>
           :
           <br /> te acompañamos antes, durante y después de nuestra visita
@@ -57,6 +57,15 @@ const FeaturesContainer = styled.section`
       width: 50%;
     }
   }
+  @media only screen and (min-width: 1366px) {
+    padding: 10% 10% !important;
+  }
+  @media only screen and (min-width: 1920px) {
+    padding: 10% 15% !important;
+    .features-container {
+      width: 45%;
+    }
+  }
 `;
 
 const FeaturesCard = styled.div`
@@ -73,7 +82,11 @@ const FeaturesCard = styled.div`
     text-align: justify;
   }
   @media only screen and (min-width: 768px) and (max-width: 1365px) {
-    padding: 30px 30px 30px 20px;
+    padding: 30px 30px 20px 30px;
+  }
+
+  @media only screen and (min-width: 1366px) {
+    padding: 40px 40px 20px 40px;
   }
 `;
 
