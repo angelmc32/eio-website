@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { StaticImage } from "gatsby-plugin-image";
+import React from 'react';
+import styled from 'styled-components';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Benefits = () => {
   return (
     <BenefitsContainer className="uk-section">
       <h2>
-        Más que un servicio de enfermería:{" "}
-        <span className="uk-text-pink uk-text-bold">calidad y confianza</span>{" "}
-        para tu <span className="uk-text-pink uk-text-bold">bienestar</span>{" "}
+        Más que un servicio de enfermería:{' '}
+        <span className="uk-text-pink uk-text-bold">calidad y confianza</span>{' '}
+        para tu <span className="uk-text-pink uk-text-bold">bienestar</span>{' '}
       </h2>
       <div className="grid-container">
         <div className="uk-padding-small card-1">
@@ -16,7 +16,7 @@ const Benefits = () => {
             <h3>El mejor personal, asignado a tu cuidado</h3>
             <div className="uk-margin-bottom">
               <StaticImage
-                src="../../images/nurse-isometric-pink.svg"
+                src="../../images/landing/features-staff.png"
                 alt="Te ayudamos a conocer el universo de las inversiones"
               />
             </div>
@@ -32,7 +32,7 @@ const Benefits = () => {
             <h3>Tu seguridad y bienestar es lo más importante</h3>
             <div className="uk-margin-bottom">
               <StaticImage
-                src="../../images/nurse-isometric-pink.svg"
+                src="../../images/landing/features-app.png"
                 alt="Te ayudamos a conocer el universo de las inversiones"
               />
             </div>
@@ -48,7 +48,7 @@ const Benefits = () => {
             <h3>Tu salud: todos comunicados en un mismo canal</h3>
             <div className="uk-margin-bottom">
               <StaticImage
-                src="../../images/nurse-isometric-pink.svg"
+                src="../../images/landing/features-careteam.png"
                 alt="Te ayudamos a conocer el universo de las inversiones"
               />
             </div>
@@ -64,7 +64,7 @@ const Benefits = () => {
             <h3>Protegemos tus datos, clínicos y personales </h3>
             <div className="uk-margin-bottom">
               <StaticImage
-                src="../../images/nurse-isometric-pink.svg"
+                src="../../images/landing/features-datasecurity.png"
                 alt="Te ayudamos a conocer el universo de las inversiones"
               />
             </div>
