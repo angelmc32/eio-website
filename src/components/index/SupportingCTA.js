@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -20,9 +21,11 @@ const SupportingCTA = () => {
           Programa <span className="uk-text-pink uk-text-bold">ahora</span> tu
           Servicio de Enfermería a domicilio.
         </h3>
-        <button className="uk-button uk-button-primary">
-          ¡Quiero agendar!
-        </button>
+        <Link to="/contacto">
+          <button className="uk-button uk-button-primary">
+            ¡Quiero agendar!
+          </button>
+        </Link>
       </div>
     </StyledContainer>
   );
