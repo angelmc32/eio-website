@@ -84,8 +84,13 @@ const Contacto = () => {
             <h4>
               Estamos{" "}
               <span className="uk-text-pink uk-text-bold">
-                listos para atenderte.
+                listos para atenderte
               </span>
+              . <br />
+            </h4>
+            <h4 className="uk-text-center">
+              <span uk-icon="whatsapp" className="uk-margin-small-right" />
+              55 39 73 97 46
             </h4>
             <StyledForm onSubmit={onSubmitHandler}>
               <h4>

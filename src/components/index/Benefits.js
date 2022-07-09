@@ -22,8 +22,7 @@ const Benefits = () => {
             </div>
             <p>
               Nuestro personal cuenta con la formación y experiencia necesaria
-              para ofrecer los cuidados que requieres. Revisa nuestros
-              currículums.
+              para ofrecer los cuidados que requieres.
             </p>
           </BenefitsCard>
         </div>

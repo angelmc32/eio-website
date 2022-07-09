@@ -40,10 +40,11 @@ const Services = () => {
                   Tratamientos de Terapia Intravenosa
                 </a>
                 <div className="uk-accordion-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                  sequi optio, architecto illo vitae porro accusamus et
-                  cupiditate placeat minima esse obcaecati totam ad,
-                  exercitationem aspernatur quam vel nulla enim!
+                  Administramos la terapia indicada por tu médico, a través de
+                  un acceso venoso, ya sea directo (por punción) o a través de
+                  un catéter. Esto permite acceso inmediato al torrente
+                  sanguíneo para suministrar líquidos o medicamentos con fines
+                  terapéuticos.
                 </div>
               </li>
               <li>
@@ -51,10 +52,11 @@ const Services = () => {
                   Clínica de Catéteres
                 </a>
                 <div className="uk-accordion-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                  sequi optio, architecto illo vitae porro accusamus et
-                  cupiditate placeat minima esse obcaecati totam ad,
-                  exercitationem aspernatur quam vel nulla enim!
+                  Con el objetivo de reducir complicaciones, manejamos el
+                  catéter del paciente de acuerdo a los Estándares Nacionales e
+                  Internacionales de Enfermería. Nos aseguramos que el catéter
+                  se mantenga sin infecciones y de fácil acceso para nuestro
+                  servicio y otros procedimientos que requiera el paciente.
                 </div>
               </li>
               <li>
@@ -62,10 +64,10 @@ const Services = () => {
                   Aplicación de Medicamentos
                 </a>
                 <div className="uk-accordion-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                  sequi optio, architecto illo vitae porro accusamus et
-                  cupiditate placeat minima esse obcaecati totam ad,
-                  exercitationem aspernatur quam vel nulla enim!
+                  En coordinación con su médico, podemos realizar la aplicación
+                  de los medicamentos que sean requeridos durante nuestro
+                  servicio. Es importante contar con la receta del médico, o que
+                  este registre las indicaciones en nuestra plataforma.
                 </div>
               </li>
               <li>
@@ -73,10 +75,9 @@ const Services = () => {
                   Medicamentos e Insumos Clínicos
                 </a>
                 <div className="uk-accordion-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                  sequi optio, architecto illo vitae porro accusamus et
-                  cupiditate placeat minima esse obcaecati totam ad,
-                  exercitationem aspernatur quam vel nulla enim!
+                  Para todos nuestros servicios, puede solicitar la cotización
+                  de medicamentos, material y otros insumos clínicos. Nosotros
+                  nos encargamos de adquirirlos y transportarlos a su domicilio.
                 </div>
               </li>
             </ul>
