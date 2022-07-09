@@ -9,8 +9,10 @@ import "@fontsource/questrial";
 import "@fontsource/nunito-sans";
 
 import UIkit from "uikit";
-// import icons from 'uikit/dist/js/uikit-icons';
+import icons from "uikit/dist/js/uikit-icons";
 import "uikit/dist/css/uikit.min.css";
+
+UIkit.use(icons);
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,6 +27,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <script
+        src="https://www.google.com/recaptcha/api.js"
+        async
+        defer
+      ></script>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
     </>

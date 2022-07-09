@@ -1,48 +1,43 @@
 import React from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 
-const Hero = () => {
+const SupportingCTA = () => {
   return (
-    <HeroContainer className="uk-section">
+    <StyledContainer className="uk-section">
       <div className="stmt-container">
-        <h1>
-          Recibe el mejor{" "}
-          <span className="uk-text-pink uk-text-bold">cuidado</span>
-          <br className="uk-visible@s" /> en la comodidad de tu{" "}
-          <span className="uk-text-pink uk-text-bold">hogar</span>
-        </h1>
+        <h2>Nuestro equipo está listo para atenderte. No esperes más.</h2>
       </div>
-      <div className="hero-img-container">
+      <div className="support-img-container">
         <StaticImage
-          src="../../images/nurse-isometric-pink-large.png"
-          alt="Enfermera llegando a domicilio"
+          src="../../images/landing/supporting-team.svg"
+          alt="Equipo de cuidado de salud"
           imgClassName="uk-width-2-5"
         />
       </div>
       <div className="cta-container">
-        <h3>¿Necesitas un servicio de enfermaría a domicilio?</h3>
-        <Link to="/contacto">
-          <button className="uk-button uk-button-primary">
-            ¡Agenda ahora!
-          </button>
-        </Link>
+        <h3>
+          Programa <span className="uk-text-pink uk-text-bold">ahora</span> tu
+          Servicio de Enfermería a domicilio.
+        </h3>
+        <button className="uk-button uk-button-primary">
+          ¡Quiero agendar!
+        </button>
       </div>
-    </HeroContainer>
+    </StyledContainer>
   );
 };
 
-const HeroContainer = styled.section`
-  min-height: calc(100vh - 64px);
+const StyledContainer = styled.section`
+  min-height: calc(90vh - 64px);
   display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 
-  h1,
+  h2,
   h3 {
     margin: 0;
     text-align: center;
@@ -60,7 +55,7 @@ const HeroContainer = styled.section`
     margin: 5% 0;
   }
 
-  .hero-img-container {
+  .support-img-container {
     display: flex;
     justify-content: center;
   }
@@ -84,6 +79,8 @@ const HeroContainer = styled.section`
     padding-left: 40px;
     padding-right: 40px;
 
+    min-height: calc(70vh - 64px);
+
     .stmt-container {
       grid-area: 1 / 1 / 2 / 2;
       height: 100%;
@@ -91,7 +88,7 @@ const HeroContainer = styled.section`
       justify-content: center;
       align-items: flex-end;
     }
-    .hero-img-container {
+    .support-img-container {
       grid-area: 1 / 2 / 3 / 3;
     }
     .cta-container {
@@ -105,9 +102,9 @@ const HeroContainer = styled.section`
     }
   }
   @media only screen and (min-width: 1024px) {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 `;
 
-export default Hero;
+export default SupportingCTA;

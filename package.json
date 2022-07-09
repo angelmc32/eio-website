@@ -27,6 +27,7 @@
     "gatsby-transformer-sharp": "^4.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-google-recaptcha": "^2.1.0",
     "styled-components": "^5.3.5",
     "uikit": "^3.13.10"
   }

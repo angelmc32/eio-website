@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Features = () => {
   return (
     <FeaturesContainer className="uk-section">
       <div className="features-container">
         <h2>
-          Un cuidado{' '}
+          Un cuidado{" "}
           <span className="uk-text-pink uk-text-bolder">integral</span>
           :
           <br /> te acompañamos antes, durante y después de nuestra visita
@@ -80,6 +80,7 @@ const FeaturesCard = styled.div`
   }
   li {
     text-align: justify;
+    color: #333;
   }
   @media only screen and (min-width: 768px) and (max-width: 1365px) {
     padding: 30px 30px 20px 30px;

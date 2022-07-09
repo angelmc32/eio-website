@@ -1,18 +1,19 @@
-import React, { useRef } from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-import logo from '../../images/lantern-pink-2.svg';
+import React, { useRef } from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import logo from "../../images/lantern-pink-2.svg";
+import logo_letters from "../../images/eio-letters-only-white.svg";
 
 const routes = [
-  ['Servicios', '/servicios'],
-  ['Nosotros', '/nosotros'],
+  ["Servicios", "/servicios"],
+  ["Nosotros", "/nosotros"],
 ];
 
 const Navbar = () => {
   const mobileMenuRef = useRef();
 
   const mobileMenuToggle = () => {
-    mobileMenuRef.current.classList.toggle('mobile-active');
+    mobileMenuRef.current.classList.toggle("mobile-active");
   };
 
   return (
@@ -31,7 +32,15 @@ const Navbar = () => {
                   uk-image="true"
                   className="uk-margin-right-small"
                 />
-                enfermeria.io
+                <div className="logo-letters-ctr uk-margin-small-left">
+                  <img
+                    data-src={logo_letters}
+                    height="40"
+                    alt=""
+                    data-uk-img=""
+                    uk-image="true"
+                  />
+                </div>
               </Link>
             </li>
           </ul>
@@ -46,17 +55,15 @@ const Navbar = () => {
               );
             })}
             <li className="uk-flex uk-flex-middle">
-              <Link to="/auth/login">
+              <Link to="/app">
                 <button className="uk-button uk-button-white uk-border-pill">
                   Ingresar
                 </button>
               </Link>
             </li>
             <li className="uk-flex uk-flex-middle">
-              <Link to="/auth/registro">
-                <button className="uk-button uk-button-primary">
-                  Regístrate
-                </button>
+              <Link to="/contacto">
+                <button className="uk-button uk-button-primary">Agendar</button>
               </Link>
             </li>
           </ul>
@@ -96,7 +103,7 @@ const Navbar = () => {
               onKeyDown={mobileMenuToggle}
               role="presentation"
             >
-              <Link to="/auth/login">
+              <Link to="/app">
                 <button className="uk-button uk-button-white uk-border-pill">
                   Ingresar
                 </button>
@@ -107,9 +114,9 @@ const Navbar = () => {
               onKeyDown={mobileMenuToggle}
               role="presentation"
             >
-              <Link to="/auth/registro">
+              <Link to="/contacto">
                 <button className="uk-button uk-button-primary uk-border-pill">
-                  Regístrate
+                  Agendar
                 </button>
               </Link>
             </li>
@@ -134,6 +141,10 @@ const StylesWrapper = styled.div`
   .uk-navbar-toggle {
     min-height: 64px !important;
   }
+  .logo-letters-ctr > img {
+    max-height: 16px;
+  }
+
   .burger {
     display: none;
   }
@@ -159,9 +170,6 @@ const StylesWrapper = styled.div`
     html {
       font-size: calc(14px + 6 * ((100vw - 320px) / 680)) !important;
     }
-    #mobile-menu {
-      display: none;
-    }
   }
   @media screen and (max-width: 768px) {
     #mobile-menu {
@@ -183,11 +191,14 @@ const StylesWrapper = styled.div`
     #mobile-menu > *:not(:last-child) {
       border-bottom: 0.5px #fafafa solid;
     }
-    #mobile-menu > li:nth-child(2) {
-      padding: 7.5% 0;
-    }
     .burger {
       display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    #mobile-menu {
+      display: none;
     }
   }
 `;

@@ -52,6 +52,7 @@ const StyledCard = styled.div`
   border: 1px solid rgba(209, 213, 219, 0.3);
   p {
     text-align: justify;
+    color: #333;
   }
 `;
 

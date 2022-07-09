@@ -1,0 +1,9 @@
+{
+  "Source": "Cotizador enfermeria.io <no-reply@enfermeria.com>",
+  "Template": "eio-landing-quotation-email-template",
+  "ConfigurationSetName": "sesNotifications",
+  "Destination": {
+    "ToAddresses": ["angmel32@gmail.com"]
+  },
+  "TemplateData": "{ \"name\":\"Familiar del paciente\", \"phone\": \"5563958393\", \"email\":\"angmel32@gmail.com\", \"territory\": \"Álvaro Obregón\", \"service\":\"Enfermera\", \"shift\": \"12 horas\", \"duration\":\"1 semana\", \"unitPrice\":\"1300.00\", \"totalPrice\": \"9100.00\" }"
+}

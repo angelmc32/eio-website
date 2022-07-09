@@ -1,54 +1,87 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import Layout from "../components/layout/Layout";
+import Footer from "../components/layout/Footer";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-// markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <Layout>
+      <StyledContainer className="uk-section">
+        <h2>¡Aquí no hay nada!</h2>
+        <p>
+          Haz click{" "}
+          <Link to="/" className="uk-text-bolder uk-text-pink">
+            aquí
+          </Link>{" "}
+          para ir al inicio
+        </p>
+        <div className="img-container">
+          <StaticImage
+            src="../images/404/404notfound.svg"
+            alt="Página no encontrada, solo hay un monstruo asustado"
+          />
+        </div>
+        <div className="btn-container">
+          <Link to="/">
+            <button className="uk-button uk-button-primary">Ir a Inicio</button>
+          </Link>
+        </div>
+      </StyledContainer>
+      <Footer />
+    </Layout>
+  );
+};
 
-export default NotFoundPage
+const StyledContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 5%;
+
+  p {
+    margin: 0;
+    color: #333;
+  }
+
+  div.img-container {
+    margin-top: 40px;
+    width: 95%;
+  }
+  div.btn-container {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button.uk-button.uk-button-primary {
+      font-size: 1rem;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    div.img-container {
+      margin-top: 60px;
+      width: 75%;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    div.img-container {
+      margin-top: 60px;
+      width: 40%;
+    }
+  }
+
+  @media only screen and (min-width: 1366px) {
+    div.img-container {
+      margin-top: 60px;
+      width: 30%;
+    }
+  }
+`;
+
+export default NotFoundPage;

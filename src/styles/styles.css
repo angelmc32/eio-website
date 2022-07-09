@@ -7,7 +7,9 @@ body {
   width: 100%;
   overflow-x: hidden !important;
 }
-
+.grecaptcha-badge {
+  opacity: 0;
+}
 header {
   max-height: 64px;
   position: fixed;
@@ -49,8 +51,10 @@ h6 {
   font-family: "Questrial" !important;
 }
 
-input.uk-input {
+input.uk-input,
+select.uk-select {
   border-radius: 5px;
+  text-align: center;
 }
 
 button.uk-button {
@@ -167,7 +171,8 @@ a.links:hover {
   background: none !important;
 }
 
-.uk-accordion-title::before {
+.uk-accordion-title::before,
+a.uk-accordion-title::before {
   color: #ff1a81;
 }
 

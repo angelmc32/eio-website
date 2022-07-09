@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import { StaticImage } from 'gatsby-plugin-image';
+import React from "react";
+import styled from "styled-components";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Benefits = () => {
   return (
     <BenefitsContainer className="uk-section">
       <h2>
-        Más que un servicio de enfermería:{' '}
-        <span className="uk-text-pink uk-text-bold">calidad y confianza</span>{' '}
-        para tu <span className="uk-text-pink uk-text-bold">bienestar</span>{' '}
+        Más que un servicio de enfermería:{" "}
+        <span className="uk-text-pink uk-text-bold">calidad y confianza</span>{" "}
+        para tu <span className="uk-text-pink uk-text-bold">bienestar</span>{" "}
       </h2>
       <div className="grid-container">
         <div className="uk-padding-small card-1">
@@ -98,6 +98,9 @@ const BenefitsContainer = styled.section`
   }
   .grid-container > * {
     margin-bottom: 20px;
+  }
+  p {
+    color: #333;
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1365px) {

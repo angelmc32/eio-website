@@ -4,6 +4,8 @@ import Hero from "../components/index/Hero";
 import Benefits from "../components/index/Benefits";
 import Features from "../components/index/Features";
 import SocialProof from "../components/index/SocialProof";
+import SupportingCTA from "../components/index/SupportingCTA";
+import Footer from "../components/layout/Footer";
 
 const IndexPage = () => (
   <Layout>
@@ -11,6 +13,8 @@ const IndexPage = () => (
     <Features />
     <SocialProof />
     <Benefits />
+    <SupportingCTA />
+    <Footer />
   </Layout>
 );
 
