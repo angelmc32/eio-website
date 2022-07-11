@@ -1,54 +1,40 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# enfermeria.io
 
-## 🚀 Quick start
+enfermeria.io is a home care services agency, Patient-centric and focused in technology and communication, that helps patients and care providers find and receive home care service providers.
 
-1.  **Create a Gatsby site.**
+## Getting Started
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+### Installation
 
-2.  **Start developing.**
+Use git to clone repository
 
-    Navigate into your new site’s directory and start it up.
+```bash
+https://github.com/angelmc32/eio-website.git
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+Navigate to each folder and install packages from package.json
 
-3.  **Open the code and start customizing!**
+```bash
+npm install
+```
 
-    Your site is now running at http://localhost:8000!
+### Deployment
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+Deploy in Netlify through Github account.
 
-4.  **Learn more**
+## Usage
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Run start scripts with your preferred command
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Built With
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [Express](https://expressjs.com/) - Web framework used
+- [React](https://reactjs.org/) - Javascript library for frontend development
+- [GatsbyJS](https://www.gatsbyjs.com/) - React Static Site Generator
+- [NodeJS](https://nodejs.org/en/) - JavaScript runtime
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Authors
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+- **Angel Meléndez C.** - _Initial work_ - Repository: [angelmc32](https://github.com/angelmc32)
